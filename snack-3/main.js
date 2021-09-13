@@ -18,3 +18,49 @@ const numeriMinMax = arrayDefoult.filter((elm) => {
 });
 
 console.log(numeriMinMax);
+
+
+// CORREZIONE
+
+//FUNZIONE con FOREACH
+
+/* const spliceArray = (arr, a, b) => {
+    const arrTemp = [];
+    arr.forEach(
+        (element, index) => {
+            if(i >= a && i <= b) {
+                arrTemp.push(element);
+            }
+        }
+    );
+    return arrTemp;
+}
+
+//PRIMCIPALE
+
+
+const arr = [10, 20, 30, 40, 50, 60, 70];
+
+const newArr = spliceArray(arr, 1, 3);
+
+console.log(newArr); */
+
+//FUNZIONE con FILTER
+
+/* const spliceArray = (arr, a, b) => {
+
+    return arr.filter(
+        (element, i) => {
+            return i >= a && i <= b;
+        }
+    );
+}
+
+const spliceArray = (arr, a, b) => arr.filter( (element, i) => i >= a && i <= b);    //<=== CON UNA SOLA ISTRUZIONE SI PUO ABBREVIARE LA FUNZIONE
+
+
+const arr = [10, 20, 30, 40, 50, 60, 70];
+
+const newArr = spliceArray(arr, 1, 3);
+
+console.log(newArr); */
